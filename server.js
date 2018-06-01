@@ -1,6 +1,6 @@
 const express = require('express');
 const fetch = require('snekfetch');
-const token = require('./config');;
+const token = require('./config').token;
 
 const port = '3737';
 const api = 'https://api.behance.net/v2/users/';
