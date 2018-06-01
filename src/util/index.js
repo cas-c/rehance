@@ -1,0 +1,1 @@
+export const userResponseToOptions = users => users.map(u => ({ value: u.username, label: `${u.display_name} (${u.username})` }));
