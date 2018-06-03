@@ -1,3 +1,5 @@
 .mini-profile {
     margin-bottom: .5em;
+    min-width: 10rem;
+    max-width: 50rem;
 }

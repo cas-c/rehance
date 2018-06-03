@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniProfileList snapshot: should render correctly with input (less than / equal to five) 1`] = `
+<div
+  className="column"
+>
+  <div
+    className="is-size-3 profile-page-header"
+  >
+    Testing
+  </div>
+  <div
+    className="has-text-centered"
+  >
+    No input.
+  </div>
+</div>
+`;
+
+exports[`MiniProfileList snapshot: should render correctly with input (more than five) 1`] = `
+<div
+  className="column"
+>
+  <div
+    className="is-size-3 profile-page-header"
+  >
+    Testing
+  </div>
+  <div
+    className="has-text-centered"
+  >
+    No input.
+  </div>
+</div>
+`;
+
+exports[`MiniProfileList snapshot: should render correctly without input 1`] = `
+<div
+  className="column"
+>
+  <div
+    className="is-size-3 profile-page-header"
+  />
+  <div
+    className="has-text-centered"
+  >
+    Nothing to display.
+  </div>
+</div>
+`;
+
+exports[`MiniProfileList snapshot: should render correctly without input and with custom empty string 1`] = `
+<div
+  className="column"
+>
+  <div
+    className="is-size-3 profile-page-header"
+  >
+    Testing
+  </div>
+  <div
+    className="has-text-centered"
+  >
+    Custom empty string.
+  </div>
+</div>
+`;

@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniProfileList snapshot: should not error out without input 1`] = `
+<div
+  className="card mini-profile"
+>
+  <div
+    className="card-content"
+  >
+    <div
+      className="media"
+    >
+      <div
+        className="media-left"
+      >
+        <figure
+          className="image is-48x48"
+        >
+          <img
+            alt=""
+            src="placeholder image url"
+          />
+        </figure>
+      </div>
+      <div
+        className="media-content"
+      >
+        <p
+          className="title is-5"
+        >
+          Default User
+        </p>
+        <p
+          className="subtitle is-6"
+        >
+          username
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MiniProfileList snapshot: should render correctly with less than five users 1`] = `
+Array [
+  <MiniProfile
+    key="mini-user-0"
+    user={
+        Object {
+            "display_name": "Test User",
+            "images": Object {
+              "115": "testImageUrl",
+            },
+            "username": "miniprofileuser",
+          }
+    }
+/>,
+  <MiniProfile
+    key="mini-user-1"
+    user={
+        Object {
+            "display_name": "Test User 2",
+            "images": Object {
+              "115": "testImageUrl2",
+            },
+            "username": "miniprofileuser2",
+          }
+    }
+/>,
+]
+`;
+
+exports[`MiniProfileList snapshot: should render correctly with more than five users 1`] = `
+Array [
+  <MiniProfile
+    key="mini-user-0"
+    user={
+        Object {
+            "display_name": "Test User",
+            "images": Object {
+              "115": "testImageUrl",
+            },
+            "username": "miniprofileuser",
+          }
+    }
+/>,
+  <MiniProfile
+    key="mini-user-1"
+    user={
+        Object {
+            "display_name": "Test User 2",
+            "images": Object {
+              "115": "testImageUrl2",
+            },
+            "username": "miniprofileuser2",
+          }
+    }
+/>,
+  <MiniProfile
+    key="mini-user-2"
+    user={
+        Object {
+            "display_name": "Test User 3",
+            "images": Object {
+              "115": "testImageUrl3",
+            },
+            "username": "miniprofileuser3",
+          }
+    }
+/>,
+  <MiniProfile
+    key="mini-user-3"
+    user={
+        Object {
+            "display_name": "Test User 4",
+            "images": Object {
+              "115": "testImageUrl4",
+            },
+            "username": "miniprofileuser4",
+          }
+    }
+/>,
+  <MiniProfile
+    key="mini-user-4"
+    user={
+        Object {
+            "display_name": "Test User 5",
+            "images": Object {
+              "115": "testImageUrl5",
+            },
+            "username": "miniprofileuser5",
+          }
+    }
+/>,
+]
+`;

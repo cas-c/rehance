@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MiniProfile = ({ user }) => (
     <div className='card mini-profile'>
@@ -17,5 +18,21 @@ const MiniProfile = ({ user }) => (
         </div>
     </div>
 );
+
+MiniProfile.propTypes = {
+    user: PropTypes.shape({
+        images: PropTypes.objectOf(PropTypes.string).isRequired,
+        display_name: PropTypes.string,
+        username: PropTypes.string
+    })
+}
+
+MiniProfile.defaultProps = {
+    user: {
+        images: { 115: 'placeholder image url' },
+        display_name: 'Default User',
+        username: 'username'
+    }
+}
 
 export default MiniProfile;

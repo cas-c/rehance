@@ -1,6 +1,47 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`MiniProfile should render correctly 1`] = `
+exports[`MiniProfile snapshot: should not error out without input 1`] = `
+<div
+  className="card mini-profile"
+>
+  <div
+    className="card-content"
+  >
+    <div
+      className="media"
+    >
+      <div
+        className="media-left"
+      >
+        <figure
+          className="image is-48x48"
+        >
+          <img
+            alt=""
+            src="placeholder image url"
+          />
+        </figure>
+      </div>
+      <div
+        className="media-content"
+      >
+        <p
+          className="title is-5"
+        >
+          Default User
+        </p>
+        <p
+          className="subtitle is-6"
+        >
+          username
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`MiniProfile snapshot: should render correctly 1`] = `
 <div
   className="card mini-profile"
 >

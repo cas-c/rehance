@@ -13,8 +13,12 @@ const mockUser = {
 }
 
 describe('MiniProfile', () => {
-    it('should render correctly', () => {
+    it('snapshot: should render correctly', () => {
         const output = shallow(<MiniProfile user={mockUser} />);
         expect(shallowToJson(output)).toMatchSnapshot();
     });
-})
+    it('snapshot: should not error out without input', () => {
+        const output = shallow(<MiniProfile />);
+        expect(shallowToJson(output)).toMatchSnapshot();
+    });
+});
