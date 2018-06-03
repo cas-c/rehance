@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project snapshot: should not error out without input 1`] = `
+<a
+  target="_blank"
+>
+  <div
+    className="card"
+  >
+    <header
+      className="card-header"
+    >
+      <p
+        className="card-header-title"
+      />
+    </header>
+    <div
+      className="card-image project-cover"
+    >
+      <figure
+        className="image is-4by3"
+      />
+    </div>
+  </div>
+</a>
+`;
+
+exports[`Project snapshot: should render correctly 1`] = `
+<a
+  href="Mock URL"
+  target="_blank"
+  title="Test Project Name"
+>
+  <div
+    className="card"
+  >
+    <header
+      className="card-header"
+    >
+      <p
+        className="card-header-title"
+      >
+        Test Project Name
+      </p>
+    </header>
+    <div
+      className="card-image project-cover"
+    >
+      <figure
+        className="image is-4by3"
+      >
+        <img
+          alt="Test Project Name"
+          className="project-cover-img"
+          src="Original cover URL"
+        />
+      </figure>
+    </div>
+  </div>
+</a>
+`;

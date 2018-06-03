@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Projects snapshot: should render correctly 1`] = `
+<div>
+  <div
+    className="profile-page-header"
+  >
+    <strong
+      className="is-size-1"
+    >
+      Projects
+    </strong>
+  </div>
+  <ProjectsColumn
+    projects={
+      Array [
+        Object {
+          "covers": Object {
+            "original": "Original cover URL",
+          },
+          "name": "Test Project Name",
+          "url": "Mock URL",
+        },
+      ]
+    }
+  />
+</div>
+`;

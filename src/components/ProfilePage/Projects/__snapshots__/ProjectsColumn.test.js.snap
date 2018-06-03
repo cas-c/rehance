@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProjectsColumn snapshot: should not error out without input 1`] = `
+<div>
+  <div
+    className="columns"
+  >
+    <div
+      className="has-text-centered"
+    >
+       This user does not have any projects. 
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProjectsColumn snapshot: should render correctly 1`] = `
+<div>
+  <div
+    className="columns"
+  >
+    <div
+      className="column"
+      key="project-0-wrapper"
+    >
+      <Project
+        data={
+          Object {
+            "covers": Object {
+              "original": "Original cover URL",
+            },
+            "name": "Test Project Name",
+            "url": "Mock URL",
+          }
+        }
+        key="project-0"
+      />
+    </div>
+    <div
+      className="column"
+      key="project-1-wrapper"
+    >
+      <Project
+        data={
+          Object {
+            "covers": Object {
+              "original": "Original cover URL 2",
+            },
+            "name": "Test Project Name 2",
+            "url": "Mock URL 2",
+          }
+        }
+        key="project-1"
+      />
+    </div>
+  </div>
+</div>
+`;

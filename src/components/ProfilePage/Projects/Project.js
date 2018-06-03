@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Project = ({ data }) => (
     <a href={data.url} target='_blank' title={data.name} >
@@ -18,5 +19,19 @@ const Project = ({ data }) => (
         </div>
     </a>
 );
+
+Project.propTypes = {
+    data: PropTypes.shape({
+        url: PropTypes.string,
+        name: PropTypes.string,
+        covers: PropTypes.shape({
+            original: PropTypes.string
+        })
+    })
+}
+
+Project.defaultProps = {
+    data: {}
+}
 
 export default Project;
