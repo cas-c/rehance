@@ -19,3 +19,11 @@ npm run test
 ```
 
 This will launch a test watcher process and will show all tests that run.  Snapshots have been included in relevant component folders and will automatically be compared against.
+
+## storybook
+
+```sh
+npm run storybook
+```
+
+A storybook has been included which features some components used in the user profile page.
