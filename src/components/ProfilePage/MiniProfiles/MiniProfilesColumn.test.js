@@ -99,7 +99,7 @@ describe('MiniProfileList', () => {
         expect(mountedWithEmpty.containsMatchingElement(<div>Custom string</div>)).toBe(true);
         mountedWithEmpty.unmount();
     });
-    it('unit: displays a "View all..." link if there are more than five users', () => {
+    it('unit: displays a "View all..." link only if there are more than five users', () => {
         const mounted = mount(<MiniProfilesColumn data={mockUsersMoreThanFive} />);
         expect(mounted.containsMatchingElement(<a>View all...</a>)).toBe(true);
         mounted.unmount();
@@ -107,12 +107,4 @@ describe('MiniProfileList', () => {
         expect(mountedLessThan.containsMatchingElement(<a>View all...</a>)).toBe(false);
         mountedLessThan.unmount();
     });
-    // it('unit: displays the proper amount', () => {
-    //     const mounted = mount(<MiniProfileList users={mockUsersLessThanFive} />);
-    //     expect(mounted.children().length).toBe(2);
-    //     mounted.unmount();
-    //     const mountedOverFive = mount(<MiniProfileList users={mockUsersMoreThanFive} />);
-    //     expect(mountedOverFive.children().length).toBe(5);
-    //     mountedOverFive.unmount();
-    // })
 })
